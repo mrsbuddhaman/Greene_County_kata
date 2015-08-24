@@ -1,6 +1,6 @@
 count = 1
 numbers = []
-10.times do
+100.times do
 	numbers << (count)
 	count += 1
 end
