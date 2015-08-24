@@ -4,4 +4,5 @@ numbers = []
 	numbers << (count)
 	count += 1
 end
+numbers[2] = "Greene"
 puts numbers
