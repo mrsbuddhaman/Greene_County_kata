@@ -3,10 +3,12 @@ numbers = []
 100.times do
 	if count % 3 == 0
 	numbers << "Greene"
+        elsif
+        count % 5 == 0
+        numbers << "County"
         else
 	numbers << (count)
 	end
 	count += 1
 end
-numbers[2] = "Greene"
 puts numbers
