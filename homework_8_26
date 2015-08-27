@@ -1,0 +1,19 @@
+array = [*(1..100)]
+
+def Greene_County(our_array)
+	our_array.each.with_index do |value, position|
+		if value % 3 == 0 && value % 5 == 0
+		our_array[position] = "Greene County"
+		elsif value % 3 == 0
+		our_array[position] = "Greene"
+		elsif value % 5 == 0
+		our_array[position] = "County"
+		end
+	end
+end
+
+Greene_County(array)
+
+puts "What index position, between 0-99, would you like to see?"
+choice = gets.to_i
+puts "The index value at #{choice} is #{array[choice]}."
